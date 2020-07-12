@@ -1,0 +1,181 @@
+body{
+    background-color: #0B0B10;
+    color:white;
+    margin: 0;
+}
+
+/* Navigation */
+.navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+}
+
+.nav-item{
+    font-family: futura-pt, sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+/* Logo */
+svg{
+    width:200px;
+    height: 150px;
+    fill: white;
+}
+
+/* Menu buttons*/
+#projects{
+    display: flex;
+    flex-direction: left;
+    align-items: center;
+}
+
+#projects svg{
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+}
+
+#projects:hover{
+    color: #0876D0;
+    transition: color 0.4s ease;  
+}
+
+#projects:hover path{
+    stroke: #0876D0 !important;
+    transition: storke 0.4s ease;
+}
+
+#menu{
+    display: flex;
+    flex-direction: left;
+    align-items: center;
+}
+
+#menu:hover {
+    color: #0876D0;
+    transition: color 0.4s ease;
+}
+
+#menu:hover rect{
+    fill: #0876D0 !important;
+    transition: fill 0.4s ease;
+}
+
+#menu svg{
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+}
+
+
+/* Left Side Name */
+aside{
+    width: 10%;
+    height: calc(100vh - 200px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrap{
+    display: flex;
+}
+
+.projectsSide{
+    margin: auto;
+    width: 10vw;
+}
+
+.projectsSide p{
+    transform: rotate(90deg);
+    text-align: center;
+    width:100%;
+    margin: 0 auto;
+    font-size: 70px;
+    font-family: futura-pt, sans-serif;
+    white-space: nowrap;
+}
+
+#emptySide{
+    width: 10vw;
+    height: calc(100vh - 200px);
+    color: black;
+}
+
+/* Projects List*/
+section{
+    align-self: center;
+    margin: 0 auto;
+}
+
+.projectsList{
+    align-self: center;
+    margin: 0 auto;
+    display: grid;
+    height: 70vh;
+    width: 70vw;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 
+    "splitip ontario"
+    "ccs ."
+    ;
+}
+
+
+.category{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 1s ease-in-out;
+}
+
+span{
+    display: none;
+    font-family: futura-pt, sans-serif;
+    font-size: 65px;
+    color: #ffffff !important; 
+    text-align: center;
+}
+
+.category:hover span{
+    display: block;
+}
+     
+      
+.category:hover {
+    background-color: black;
+    opacity: 0.5;
+    transition: 0.8s ease-in-out;
+}
+
+
+#splitip{
+    grid-area: splitip;
+    background-image: url(../images/splitip.jpeg);
+}
+
+#ontario{
+    grid-area: ontario;
+    background-image: url(../images/ontario.jpg); 
+}
+
+#ccs{
+    grid-area: ccs;
+    background-image: url(../images/ccs.jpg);
+}
+
+
+/* Footer */
+.footer{
+    height: 100px;
+}
+
