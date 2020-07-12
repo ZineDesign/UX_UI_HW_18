@@ -14,7 +14,7 @@ a{
 
 a:hover{
     color: #0876D0;
-    transition: color 0.3s ease;
+    transition: 0.4s ease;
 }
 
 /* Navigation */
@@ -44,6 +44,11 @@ svg{
     fill: white;
 }
 
+#logo:hover path{
+    fill: #0876D0 !important;
+    transition: 0.4s ease;
+}
+
 /* Menu buttons*/
 #projects{
     display: flex;
@@ -58,13 +63,12 @@ svg{
 }
 
 #projects:hover{
-    color: #0876D0;
-    transition: color 0.4s ease;  
+    color: #0876D0; 
 }
 
 #projects:hover path{
     stroke: #0876D0 !important;
-    transition: storke 0.4s ease;
+    transition: 0.4s ease;
 }
 
 #menu{
@@ -89,8 +93,6 @@ svg{
     padding: 10px;
 }
 
-
-
 aside{
     width: 10%;
     height: calc(100vh - 100px);
@@ -114,8 +116,6 @@ aside{
     font-family: futura-pt, sans-serif;
     white-space: nowrap;
 }
-
-
 
 section{
     width: 90%;
@@ -144,7 +144,7 @@ section{
 p{
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .skills{
@@ -187,16 +187,15 @@ h2{
 /* My resume */
 #resume{
     font-family: 'Poppins', sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     background-color:#0876D0;
+    white-space: nowrap;
     color: white;
     border: none;
-    height: 50px;
-    width: 160px;
-    padding: 0 20px;
+    padding: 10px 30px;
     position: absolute;
-    bottom: 100px;
-    right: 270px;
+    bottom: 5em;
+    right: 11em;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
